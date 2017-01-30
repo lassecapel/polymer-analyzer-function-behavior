@@ -1,0 +1,23 @@
+
+<link rel="import" href="polymer/polymer.html">
+
+<dom-module id="my-element">
+    <template>
+        <style>
+            :host {
+                display: block;
+            }
+        </style>
+        
+    </template>
+    <script src="my-behaviors.js"></script>
+    <script>
+        Polymer({
+            is: 'my-element',
+            behaviors: [
+                SimpleBehavior, 
+                FunctionResultBehavior
+            ]
+        });
+    </script>
+</dom-module>
