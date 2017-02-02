@@ -13,6 +13,8 @@ analyzer.analyze('my-element.html')
     const behaviors = Array.from(document.getByKind('behavior'));
     expect(behaviors.length).toBe(2, 'expected two behaviors to be defined');
     console.log('behaviors -->', behaviors);
+    process.exit();
   }).catch((e) => {
     console.log(e); // "oh, no!"
+    process.exit();
   })
